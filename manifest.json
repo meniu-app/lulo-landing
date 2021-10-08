@@ -1,5 +1,10 @@
 {
  "name": "Lulo",
+ "short_name": "Lulo",
+ "start_url": ".",
+ "display": "standalone",
+ "background_color": "#2b4658",
+ "description": "Manage your menu like never before and improve your operations with our intuitive analytics board.",
  "icons": [
   {
    "src": "\/assets/icon/android-icon-36x36.png",
