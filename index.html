@@ -6,11 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="TemplateMo">
+    <meta name="author" content="Lulo">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="57x57" href="assets/icon/apple-icon-57x57.png">
@@ -36,8 +35,6 @@
 
 Lulo Landing Page
 
-https://templatemo.com/tm-540-lava-landing-page
-
 -->
 
     <!-- Additional CSS Files -->
@@ -45,13 +42,59 @@ https://templatemo.com/tm-540-lava-landing-page
 
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
-    <link rel="stylesheet" href="assets/css/templatemo-lava.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/templatemo-lava.css">
 
-    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css">
 
 </head>
 
 <body>
+
+    <!-- ***** Join Now modal Start ***** -->
+    <div class="join-now-modal-wrapper-overlay"></div>
+    <div class="join-now-modal-wrapper">
+        <div class="join-now-modal-overlay">
+            <div class="join-now-modal">
+                <div class="join-now-modal-head flex-row justify-content-between">
+                    <span class="join-now-title">Become a partner for FREE</span>
+                    <a href="#" class="close-modal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29.25" height="29.25" viewBox="0 0 29.25 29.25">
+                            <g id="Icon_ionic-ios-close-circle-outline" data-name="Icon ionic-ios-close-circle-outline" transform="translate(-3.375 -3.375)" opacity="0.2">
+                                <path id="Path_476" data-name="Path 476" d="M23.295,21.705,19.589,18l3.705-3.705a1.124,1.124,0,0,0-1.589-1.589L18,16.411l-3.705-3.705a1.124,1.124,0,0,0-1.589,1.589L16.411,18l-3.705,3.705a1.086,1.086,0,0,0,0,1.589,1.116,1.116,0,0,0,1.589,0L18,19.589l3.705,3.705a1.129,1.129,0,0,0,1.589,0A1.116,1.116,0,0,0,23.295,21.705Z"/>
+                                <path id="Path_477" data-name="Path 477" d="M18,5.344A12.651,12.651,0,1,1,9.049,9.049,12.573,12.573,0,0,1,18,5.344m0-1.969A14.625,14.625,0,1,0,32.625,18,14.623,14.623,0,0,0,18,3.375Z"/>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="join-now-modal-description flex-row">
+                    <p>
+                        Create your digital menu in under 10 minutes. Have control over your dishes, pictures, discounts, and branding, for one or multiple locations. From anywhere.
+                    </p>
+                </div>
+                <form id="joinForm" class="join-now-form">
+                    <div class="input-wrapper">
+                        <label id="labelBusinessName" class="input-label" for="businessName">Business Name</label>
+                        <input id="businessName" name="businessName" placeholder="Business Name" type="text" value="">
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="input-label" for="businessAddress">Business Address</label>
+                        <input id="businessAddress" name="businessAddress" placeholder="Business Address" type="text" value="">
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="input-label" for="email">Email Address</label>
+                        <input id="email" name="email" placeholder="Email Address" type="email" value="">
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="input-label" for="phoneNumber">Phone Number</label>
+                        <input id="phoneNumber" name="phoneNumber" placeholder="Phone Number" type="tel" value="">
+                    </div>
+                    <a id="createStoreButton" href="#" type="button" class="main-button-slider modal-button">Create store</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Join Now modal End ***** -->
+
 
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
@@ -72,32 +115,32 @@ https://templatemo.com/tm-540-lava-landing-page
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="index.html" class="logo">
-                            <img src="assets/images/lulo-logo.png">
+                            <img src="assets/images/lulo-logo.png" alt="Lulo logo">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
                             <li class="scroll-to-section"><a href="#insights" class="menu-item">Insights</a></li>
-<!--                            <li class="scroll-to-section"><a href="#testimonials" class="menu-item">Testimonials</a>-->
-                            </li>
-                            <li class="submenu">
-                                <a href="javascript:;">Resources</a>
-                                <ul>
-                                    <li><a href="" class="menu-item">About Us</a></li>
-                                    <li><a href="" class="menu-item">Features</a></li>
-                                    <li><a href="" class="menu-item">FAQ's</a></li>
-                                    <li><a href="" class="menu-item">Blog</a></li>
-                                </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact</a></li>
+                            <li class="scroll-to-section"><a href="#insights" class="menu-item">Resources</a></li>
+                            <li class="scroll-to-section"><a href="mailto:hello@oklulo.com" class="menu-item">Contact</a></li>
+                            <li class="scroll-to-section"><a href="https://dashboard.oklulo.com/" class="menu-item">Login</a></li>
+<!--                            <li class="submenu">-->
+<!--                                <a href="javascript:;">Resources</a>-->
+<!--                                <ul>-->
+<!--                                    <li><a href="" class="menu-item">About Us</a></li>-->
+<!--                                    <li><a href="" class="menu-item">Features</a></li>-->
+<!--                                    <li><a href="" class="menu-item">FAQ's</a></li>-->
+<!--                                    <li><a href="" class="menu-item">Blog</a></li>-->
+<!--                                </ul>-->
+<!--                            </li>-->
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
                         <!-- ***** Menu End ***** -->
                         <!-- ***** Action button Start ***** -->
-                        <a href="#about" class="main-button-slider button-small">JOIN NOW</a>
+                        <a href="https://calendly.com/oklulo/lulo-demo" class="main-button-slider button-small join-now">JOIN NOW</a>
                         <!-- ***** Action button End ***** -->
                     </nav>
                 </div>
@@ -118,11 +161,11 @@ https://templatemo.com/tm-540-lava-landing-page
                 <div class="row">
                     <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
                         data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                        <h1>How to make your business more attractive?</h1>
+                        <h1>Partner Portal</h1>
                         <p>
 <!--                            Lulo <a href="#">HTML landing page</a> template is provided by <a href="#">TemplateMo</a>.-->
-                           Join Lulo family and bring to your customers fast and intelligible way of browsing goods and foods. We are growing and Insights for your business is the next step we are working on!</p>
-                        <a href="#about" class="main-button-slider">JOIN NOW</a>
+                            Manage your menu like never before and improve your operations with our intuitive analytics board.</p>
+                        <a href="https://calendly.com/oklulo/lulo-demo" class="main-button-slider join-now">JOIN NOW</a>
                     </div>
                     <div class="right-content col-lg-6 col-md-12 col-sm-12 col-xs-12"
                         data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
@@ -150,12 +193,8 @@ https://templatemo.com/tm-540-lava-landing-page
 
                 <div class="right-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
                      data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <h1>Lulo Insights Hub</h1>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                        erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                        sanctus est Lorem ipsum dolor sit amet. </p>
+                    <h1>Go digital</h1>
+                    <p>Join the digital revolution in under 10 minutes. Have control over your menu, dishes, pictures, discounts, and branding, for one or multiple locations. From anywhere.</p>
                 </div>
             </div>
         </div>
@@ -165,12 +204,8 @@ https://templatemo.com/tm-540-lava-landing-page
             <div class="row">
                 <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
                      data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <h1>Lulo Insights Hub</h1>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                        erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                        sanctus est Lorem ipsum dolor sit amet. </p>
+                    <h1>Understand your customer</h1>
+                    <p>Track the performance of dishes that your customers love, daily, weekly or monthly. Give dishes a boost by applying discounts or promotions in real time to reward your customers.</p>
                 </div>
 
                 <div class="right-content col-lg-6 col-md-12 col-sm-12 col-xs-12"
@@ -194,209 +229,16 @@ https://templatemo.com/tm-540-lava-landing-page
 
                 <div class="right-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
                      data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <h1>Lulo Insights Hub</h1>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                        erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                        sanctus est Lorem ipsum dolor sit amet. </p>
+                    <h1>LULO Insights Board</h1>
+                    <p>Use our real-time analytics to optimize the performance of selected dishes to drive sales. You can also highlight new dishes at the busiest times to ensure the highest exposure to your customers.</p>
                     <br/>
-                    <a href="#about" class="main-button-slider button-small">JOIN NOW</a>
+                    <a href="https://calendly.com/oklulo/lulo-demo" class="main-button-slider button-small join-now">JOIN NOW</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ***** Insights Area End ***** -->
-
-    <!-- ***** Features Big Item Start ***** -->
-<!--    <section class="section" id="about">-->
-<!--        <div class="container">-->
-<!--            <div class="row">-->
-<!--                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"-->
-<!--                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">-->
-<!--                    <div class="features-item">-->
-<!--                        <div class="features-icon">-->
-<!--                            <h2>01</h2>-->
-<!--                            <img src="assets/images/features-icon-1.png" alt="">-->
-<!--                            <h4>Trend Analysis</h4>-->
-<!--                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>-->
-<!--                            <a href="#testimonials" class="main-button">-->
-<!--                                Read More-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"-->
-<!--                    data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">-->
-<!--                    <div class="features-item">-->
-<!--                        <div class="features-icon">-->
-<!--                            <h2>02</h2>-->
-<!--                            <img src="assets/images/features-icon-2.png" alt="">-->
-<!--                            <h4>Site Optimization</h4>-->
-<!--                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>-->
-<!--                            <a href="#testimonials" class="main-button">-->
-<!--                                Discover More-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"-->
-<!--                    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">-->
-<!--                    <div class="features-item">-->
-<!--                        <div class="features-icon">-->
-<!--                            <h2>03</h2>-->
-<!--                            <img src="assets/images/features-icon-3.png" alt="">-->
-<!--                            <h4>Email Design</h4>-->
-<!--                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>-->
-<!--                            <a href="#testimonials" class="main-button">-->
-<!--                                More Detail-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-    <!-- ***** Features Big Item End ***** -->
-
-<!--    <div class="left-image-decor"></div>-->
-
-    <!-- ***** Features Big Item Start ***** -->
-<!--    <section class="section" id="promotion">-->
-<!--        <div class="container">-->
-<!--            <div class="row">-->
-<!--                <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"-->
-<!--                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">-->
-<!--                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">-->
-<!--                </div>-->
-<!--                <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">-->
-<!--                    <ul>-->
-<!--                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">-->
-<!--                            <img src="assets/images/about-icon-01.png" alt="">-->
-<!--                            <div class="text">-->
-<!--                                <h4>Vestibulum pulvinar rhoncus</h4>-->
-<!--                                <p>Please do not redistribute this template ZIP file for a download purpose. You may <a-->
-<!--                                rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact</a> us for-->
-<!--                            additional licensing of our template or to get a PSD file.</p>-->
-<!--                            </div>-->
-<!--                        </li>-->
-<!--                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">-->
-<!--                            <img src="assets/images/about-icon-02.png" alt="">-->
-<!--                            <div class="text">-->
-<!--                                <h4>Sed blandit quam in velit</h4>-->
-<!--                                <p>You can <a rel="nofollow"-->
-<!--                                        href="https://templatemo.com/tm-540-lava-landing-page">download Lava-->
-<!--                                        Template</a> from our website. Duis viverra, ipsum et scelerisque placerat, orci-->
-<!--                                    magna consequat ligula.</p>-->
-<!--                            </div>-->
-<!--                        </li>-->
-<!--                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">-->
-<!--                            <img src="assets/images/about-icon-03.png" alt="">-->
-<!--                            <div class="text">-->
-<!--                                <h4>Aenean faucibus venenatis</h4>-->
-<!--                                <p>Phasellus in imperdiet felis, eget vestibulum nulla. Aliquam nec dui nec augue-->
-<!--                                    maximus porta. Curabitur tristique lacus.</p>-->
-<!--                            </div>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-    <!-- ***** Features Big Item End ***** -->
-
-<!--    <div class="right-image-decor"></div>-->
-
-    <!-- ***** Testimonials Starts ***** -->
-<!--    <section class="section" id="testimonials">-->
-<!--        <div class="container">-->
-<!--            <div class="row">-->
-<!--                <div class="col-lg-8 offset-lg-2">-->
-<!--                    <div class="center-heading">-->
-<!--                        <h2>What They Think <em>About Us</em></h2>-->
-<!--                        <p>Suspendisse vitae laoreet mauris. Fusce a nisi dapibus, euismod purus non, convallis odio.-->
-<!--                            Donec vitae magna ornare, pellentesque ex vitae, aliquet urna.</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-lg-10 col-md-12 col-sm-12 mobile-bottom-fix-big"-->
-<!--                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">-->
-<!--                    <div class="owl-carousel owl-theme">-->
-<!--                        <div class="item service-item">-->
-<!--                            <div class="author">-->
-<!--                                <i><img src="assets/images/testimonial-author-1.png" alt="Author One"></i>-->
-<!--                            </div>-->
-<!--                            <div class="testimonial-content">-->
-<!--                                <ul class="stars">-->
-<!--                                    <li><i class="fa fa-star"></i></li>-->
-<!--                                    <li><i class="fa fa-star"></i></li>-->
-<!--                                    <li><i class="fa fa-star"></i></li>-->
-<!--                                    <li><i class="fa fa-star"></i></li>-->
-<!--                                    <li><i class="fa fa-star"></i></li>-->
-<!--                                </ul>-->
-<!--                                <h4>Jonathan Smart</h4>-->
-<!--                                <p>“Nullam hendrerit, elit a semper pharetra, ipsum nibh tristique tortor, in tempus-->
-<!--                                    urna elit in mauris.”</p>-->
-<!--                                <span>Besta CTO</span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="item service-item">-->
-<!--                            <div class="author">-->
-<!--                                <i><img src="assets/images/testimonial-author-1.png" alt="Second Author"></i>-->
-<!--                            </div>-->
-<!--                            <div class="testimonial-content">-->
-<!--                                <ul class="stars">-->
-<!--                                    <li><i class="fa fa-star"></i></li>-->
-<!--                                    <li><i class="fa fa-star"></i></li>-->
-<!--                                    <li><i class="fa fa-star"></i></li>-->
-<!--                                    <li><i class="fa fa-star"></i></li>-->
-<!--                                    <li><i class="fa fa-star"></i></li>-->
-<!--                                </ul>-->
-<!--                                <h4>Martino Tino</h4>-->
-<!--                                <p>“Morbi non mi luctus felis molestie scelerisque. In ac libero viverra, placerat est-->
-<!--                                    interdum, rhoncus leo.”</p>-->
-<!--                                <span>Web Analyst</span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="item service-item">-->
-<!--                            <div class="author">-->
-<!--                                <i><img src="assets/images/testimonial-author-1.png" alt="Author Third"></i>-->
-<!--                            </div>-->
-<!--                            <div class="testimonial-content">-->
-<!--                                <ul class="stars">-->
-<!--                                    <li><i class="fa fa-star"></i></li>-->
-<!--                                    <li><i class="fa fa-star"></i></li>-->
-<!--                                    <li><i class="fa fa-star"></i></li>-->
-<!--                                </ul>-->
-<!--                                <h4>George Tasa</h4>-->
-<!--                                <p>“Fusce rutrum in dolor sit amet lobortis. Ut at vehicula justo. Donec quam dolor,-->
-<!--                                    congue a fringilla sed, maximus et urna.”</p>-->
-<!--                                <span>System Admin</span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="item service-item">-->
-<!--                            <div class="author">-->
-<!--                                <i><img src="assets/images/testimonial-author-1.png" alt="Fourth Author"></i>-->
-<!--                            </div>-->
-<!--                            <div class="testimonial-content">-->
-<!--                                <ul class="stars">-->
-<!--                                    <li><i class="fa fa-star"></i></li>-->
-<!--                                    <li><i class="fa fa-star"></i></li>-->
-<!--                                    <li><i class="fa fa-star"></i></li>-->
-<!--                                    <li><i class="fa fa-star"></i></li>-->
-<!--                                </ul>-->
-<!--                                <h4>Sir James</h4>-->
-<!--                                <p>"Fusce rutrum in dolor sit amet lobortis. Ut at vehicula justo. Donec quam dolor,-->
-<!--                                    congue a fringilla sed, maximus et urna."</p>-->
-<!--                                <span>New Villager</span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-    <!-- ***** Testimonials Ends ***** -->
 
     <!-- ***** Join Start ***** -->
     <section class="section join container-dark">
@@ -411,10 +253,10 @@ https://templatemo.com/tm-540-lava-landing-page
                 <div class="right-content col-lg-6 col-md-12 col-sm-12 col-xs-12"
                      data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
                     <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12 d-inline-block">
-                        <span class="join-text">Understand your business like never before</span>
+                        <span class="join-text">Understand your customer</span>
                     </div>
                     <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12 d-inline-block">
-                        <a href="#about" class="main-button-slider button-medium">JOIN NOW</a>
+                        <a href="https://calendly.com/oklulo/lulo-demo" class="main-button-slider button-medium join-now">JOIN NOW</a>
                     </div>
                 </div>
             </div>
@@ -426,59 +268,6 @@ https://templatemo.com/tm-540-lava-landing-page
     <!-- ***** Footer Start ***** -->
     <footer id="contact-us">
         <div class="container">
-<!--            <div class="footer-content">-->
-<!--                <div class="row">-->
-<!--                    &lt;!&ndash; ***** Contact Form Start ***** &ndash;&gt;-->
-<!--                    <div class="col-lg-6 col-md-12 col-sm-12">-->
-<!--                        <div class="contact-form">-->
-<!--                            <form id="contact" action="" method="post">-->
-<!--                                <div class="row">-->
-<!--                                    <div class="col-md-6 col-sm-12">-->
-<!--                                        <fieldset>-->
-<!--                                            <input name="name" type="text" id="name" placeholder="Full Name" required=""-->
-<!--                                                style="background-color: rgba(250,250,250,0.3);">-->
-<!--                                        </fieldset>-->
-<!--                                    </div>-->
-<!--                                    <div class="col-md-6 col-sm-12">-->
-<!--                                        <fieldset>-->
-<!--                                            <input name="email" type="text" id="email" placeholder="E-Mail Address"-->
-<!--                                                required="" style="background-color: rgba(250,250,250,0.3);">-->
-<!--                                        </fieldset>-->
-<!--                                    </div>-->
-<!--                                    <div class="col-lg-12">-->
-<!--                                        <fieldset>-->
-<!--                                            <textarea name="message" rows="6" id="message" placeholder="Your Message"-->
-<!--                                                required="" style="background-color: rgba(250,250,250,0.3);"></textarea>-->
-<!--                                        </fieldset>-->
-<!--                                    </div>-->
-<!--                                    <div class="col-lg-12">-->
-<!--                                        <fieldset>-->
-<!--                                            <button type="submit" id="form-submit" class="main-button">Send Message-->
-<!--                                                Now</button>-->
-<!--                                        </fieldset>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </form>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; ***** Contact Form End ***** &ndash;&gt;-->
-<!--                    <div class="right-content col-lg-6 col-md-12 col-sm-12">-->
-<!--                        <h2>More About <em>Lulo</em></h2>-->
-<!--                        <p>Phasellus dapibus urna vel lacus accumsan, iaculis eleifend leo auctor. Duis at finibus odio.-->
-<!--                            Vivamus ut pharetra arcu, in porta metus. Suspendisse blandit pulvinar ligula ut elementum.-->
-<!--                            <br><br>If you need this contact form to send email to your inbox, you may follow our <a-->
-<!--                                rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact</a> page-->
-<!--                            for more detail.</p>-->
-<!--                        <ul class="social">-->
-<!--                            <li><a href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a></li>-->
-<!--                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
-<!--                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
-<!--                            <li><a href="#"><i class="fa fa-rss"></i></a></li>-->
-<!--                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
             <div class="row">
                 <div class="col-lg-12">
                     <div class="col-lg-4 col-md-6 col-xs-6">
@@ -486,57 +275,56 @@ https://templatemo.com/tm-540-lava-landing-page
                         <p>© Copyright 2021 Lulo <br/>
                             All rights reserved.</p>
                     </div>
-                    <div class="col-lg-2 col-md-6 col-xs-6">
-                        <h4>Link 1</h4>
-                        <ul>
-                            <li>External link 1</li>
-                            <li>External link 2</li>
-                            <li>External link 3</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-xs-6">
-                        <h4>Link 2</h4>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-xs-6">
-                        <h4>Link 3</h4>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-xs-6">
+<!--                    <div class="col-lg-2 col-md-6 col-xs-6">-->
+<!--                        <h4>Link 1</h4>-->
+<!--                        <ul>-->
+<!--                            <li>External link 1</li>-->
+<!--                            <li>External link 2</li>-->
+<!--                            <li>External link 3</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-2 col-md-6 col-xs-6">-->
+<!--                        <h4>Link 2</h4>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-2 col-md-6 col-xs-6">-->
+<!--                        <h4>Link 3</h4>-->
+<!--                    </div>-->
+                    <div class="col-lg-4 col-md-6 col-xs-6">
                         <h4>Socials</h4>
                         <ul class="social">
                             <li>
-                                <a href="#">
+                                <a href="https://www.facebook.com/Lulo-102271205489445">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="31.5" viewBox="0 0 31.5 31.5">
                                         <path id="Icon_awesome-facebook-square" data-name="Icon awesome-facebook-square" d="M28.125,2.25H3.375A3.375,3.375,0,0,0,0,5.625v24.75A3.375,3.375,0,0,0,3.375,33.75h9.65V23.041H8.6V18h4.43V14.158c0-4.37,2.6-6.784,6.586-6.784a26.836,26.836,0,0,1,3.9.34V12h-2.2a2.521,2.521,0,0,0-2.842,2.723V18h4.836l-.773,5.041H18.475V33.75h9.65A3.375,3.375,0,0,0,31.5,30.375V5.625A3.375,3.375,0,0,0,28.125,2.25Z" transform="translate(0 -2.25)" opacity="1" fill="grey"/>
                                     </svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://twitter.com/lulomenu">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24.365" viewBox="0 0 30 24.365">
                                         <path id="Icon_awesome-twitter" data-name="Icon awesome-twitter" d="M26.916,9.453c.019.266.019.533.019.8,0,8.128-6.187,17.494-17.494,17.494A17.375,17.375,0,0,1,0,24.986a12.719,12.719,0,0,0,1.485.076,12.314,12.314,0,0,0,7.633-2.627,6.159,6.159,0,0,1-5.749-4.264,7.754,7.754,0,0,0,1.161.1,6.5,6.5,0,0,0,1.618-.209,6.149,6.149,0,0,1-4.93-6.034v-.076A6.192,6.192,0,0,0,4,12.727,6.158,6.158,0,0,1,2.094,4.5a17.477,17.477,0,0,0,12.678,6.434,6.941,6.941,0,0,1-.152-1.409A6.154,6.154,0,0,1,25.26,5.322a12.105,12.105,0,0,0,3.9-1.485,6.132,6.132,0,0,1-2.7,3.388A12.326,12.326,0,0,0,30,6.274a13.217,13.217,0,0,1-3.084,3.179Z" transform="translate(0 -3.381)" opacity="1" fill="grey"/>
                                     </svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.instagram.com/lulomenu/">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="31.518" height="31.51" viewBox="0 0 31.518 31.51">
                                         <path id="Icon_awesome-instagram" data-name="Icon awesome-instagram" d="M15.757,9.914a8.079,8.079,0,1,0,8.079,8.079A8.066,8.066,0,0,0,15.757,9.914Zm0,13.331a5.252,5.252,0,1,1,5.252-5.252,5.262,5.262,0,0,1-5.252,5.252ZM26.051,9.584A1.884,1.884,0,1,1,24.166,7.7,1.88,1.88,0,0,1,26.051,9.584ZM31.4,11.5a9.325,9.325,0,0,0-2.545-6.6,9.387,9.387,0,0,0-6.6-2.545c-2.6-.148-10.4-.148-13,0a9.373,9.373,0,0,0-6.6,2.538,9.356,9.356,0,0,0-2.545,6.6c-.148,2.6-.148,10.4,0,13a9.325,9.325,0,0,0,2.545,6.6,9.4,9.4,0,0,0,6.6,2.545c2.6.148,10.4.148,13,0a9.325,9.325,0,0,0,6.6-2.545,9.387,9.387,0,0,0,2.545-6.6c.148-2.6.148-10.392,0-12.994ZM28.041,27.281a5.318,5.318,0,0,1-3,3c-2.074.823-7,.633-9.288.633s-7.221.183-9.288-.633a5.318,5.318,0,0,1-3-3c-.823-2.074-.633-7-.633-9.288s-.183-7.221.633-9.288a5.318,5.318,0,0,1,3-3c2.074-.823,7-.633,9.288-.633s7.221-.183,9.288.633a5.318,5.318,0,0,1,3,3c.823,2.074.633,7,.633,9.288S28.863,25.214,28.041,27.281Z" transform="translate(0.005 -2.238)" opacity="1" fill="grey"/>
                                     </svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.063" height="30" viewBox="0 0 26.063 30">
-                                        <path id="Icon_simple-tiktok" data-name="Icon simple-tiktok" d="M16.057.025C17.695,0,19.32.012,20.945,0a7.786,7.786,0,0,0,2.187,5.212,8.815,8.815,0,0,0,5.3,2.237v5.037a13.379,13.379,0,0,1-5.25-1.212,15.444,15.444,0,0,1-2.025-1.162c-.012,3.65.013,7.3-.025,10.937a9.547,9.547,0,0,1-1.687,4.925,9.313,9.313,0,0,1-7.387,4.012,9.114,9.114,0,0,1-5.1-1.287,9.426,9.426,0,0,1-4.562-7.137c-.025-.625-.037-1.25-.012-1.862a9.41,9.41,0,0,1,10.912-8.35c.025,1.85-.05,3.7-.05,5.55A4.289,4.289,0,0,0,7.77,19.55a4.959,4.959,0,0,0-.175,2.012A4.254,4.254,0,0,0,11.97,25.15a4.2,4.2,0,0,0,3.462-2.012,2.884,2.884,0,0,0,.512-1.325c.125-2.237.075-4.462.088-6.7.012-5.037-.013-10.062.025-15.087Z" transform="translate(-2.369)" opacity="1" fill="grey"/>
-                                    </svg>
+                                <a href="https://www.reddit.com/user/lulomenu">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 11.779c0-1.459-1.192-2.645-2.657-2.645-.715 0-1.363.286-1.84.746-1.81-1.191-4.259-1.949-6.971-2.046l1.483-4.669 4.016.941-.006.058c0 1.193.975 2.163 2.174 2.163 1.198 0 2.172-.97 2.172-2.163s-.975-2.164-2.172-2.164c-.92 0-1.704.574-2.021 1.379l-4.329-1.015c-.189-.046-.381.063-.44.249l-1.654 5.207c-2.838.034-5.409.798-7.3 2.025-.474-.438-1.103-.712-1.799-.712-1.465 0-2.656 1.187-2.656 2.646 0 .97.533 1.811 1.317 2.271-.052.282-.086.567-.086.857 0 3.911 4.808 7.093 10.719 7.093s10.72-3.182 10.72-7.093c0-.274-.029-.544-.075-.81.832-.447 1.405-1.312 1.405-2.318zm-17.224 1.816c0-.868.71-1.575 1.582-1.575.872 0 1.581.707 1.581 1.575s-.709 1.574-1.581 1.574-1.582-.706-1.582-1.574zm9.061 4.669c-.797.793-2.048 1.179-3.824 1.179l-.013-.003-.013.003c-1.777 0-3.028-.386-3.824-1.179-.145-.144-.145-.379 0-.523.145-.145.381-.145.526 0 .65.647 1.729.961 3.298.961l.013.003.013-.003c1.569 0 2.648-.315 3.298-.962.145-.145.381-.144.526 0 .145.145.145.379 0 .524zm-.189-3.095c-.872 0-1.581-.706-1.581-1.574 0-.868.709-1.575 1.581-1.575s1.581.707 1.581 1.575-.709 1.574-1.581 1.574z"  opacity="1" fill="grey"/></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/oklulo/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" opacity="1" fill="grey"/></svg>
                                 </a>
                             </li>
                         </ul>
                     </div>
-<!--                    <div class="sub-footer">-->
-<!--                        <p>Copyright &copy; 2020 Lava Landing Page-->
-<!--                        | Designed by <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>-->
-<!--                    </div>-->
                 </div>
             </div>
         </div>

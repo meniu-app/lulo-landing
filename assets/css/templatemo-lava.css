@@ -26,7 +26,6 @@ Table of contents
 font & reset css
 ---------------------------------------------
 */
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
 /*
 ---------------------------------------------
@@ -79,7 +78,6 @@ header, nav, section, article, aside, footer, hgroup {
 }
 
 html, body {
-  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   background-color: #fff;
   font-size: 16px;
@@ -174,7 +172,7 @@ body {
 
 a.main-button-slider {
   /*font-size: 14px;*/
-  border-radius: 33px;
+  border-radius: 36px;
   padding: 18px 25px;
   /*background-color: #5bfd8d;*/
   background: linear-gradient(0.264turn, #32ada4, #48d997, #5bfd8d);
@@ -219,6 +217,22 @@ a.main-button-slider.button-medium {
   line-height: 30px;
   margin: 10px 0;
   min-width: 211px;
+}
+
+a.main-button-slider.modal-button {
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400 !important;
+  float: none;
+  height: 50px;
+  padding: 10px 40px;
+  text-align: center;
+  line-height: 30px;
+  margin: 10px 0;
+  text-transform: none;
+  place-self: end;
+  align-self: flex-start;
 }
 
 a.main-button {
@@ -286,6 +300,145 @@ button.main-button:hover {
   color: #888;
   text-align: center;
 }
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+/*
+---------------------------------------------
+Jon Now modal
+---------------------------------------------
+*/
+
+.join-now-modal-wrapper-overlay {
+  background-color: rgba(0, 0, 0, .13);
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 99;
+}
+
+.join-now-modal-wrapper {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -20%);
+  height: content-box;
+  width: content-box;
+  z-index: 991;
+}
+
+.join-now-modal-overlay {
+  display: flex;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+  /*height: 100vh;*/
+}
+
+.join-now-modal-overlay .join-now-modal {
+  background-color: #ffffff;
+  border-radius: 16px;
+  display: flex;
+  flex-flow: column;
+  padding: 30px 30px 35px;
+  min-height: 400px;
+  min-width: 250px;
+  height: 830px;
+  width: 620px;
+  place-self: center;
+  /*margin-bottom: 30vh;*/
+  z-index: 9999;
+}
+
+.join-now-modal-head {
+  display: flex;
+  margin-bottom: 35px;
+  height: 30px;
+  width: 100%;
+}
+
+.join-now-modal-head .join-now-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+a.close-modal svg g {
+  transition: opacity .2s ease;
+}
+
+a.close-modal:hover svg g {
+  opacity: .7;
+}
+
+.join-now-modal .join-now-modal-description {
+  margin-bottom: 20px;
+  height: auto;
+  width: 100%;
+}
+
+.join-now-modal .join-now-modal-description p {
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+.join-now-form {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+}
+
+.input-wrapper {
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 16px;
+  font-family: 'Raleway', sans-serif;
+  justify-content: stretch;
+  margin-bottom: 30px;
+  padding: 20px 25px 15px;
+  width: 100%;
+}
+
+.input-wrapper .input-label {
+  color: #707070;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.input-wrapper input {
+  outline: none;
+  box-sizing: border-box;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 600;
+  border: none;
+  border-bottom: 1px solid #000000;
+  line-height: 22px;
+  padding: 5px 0;
+  height: 30px;
+  width: 100%;
+}
+
+/*
+---------------------------------------------
+Input area
+---------------------------------------------
+*/
+
+
 
 
 /*
@@ -486,7 +639,7 @@ header
   cursor: pointer;
   display: block;
   position: absolute;
-  top: 23px;
+  top: 30px;
   width: 32px;
   height: 40px;
   text-indent: -9999em;
@@ -616,8 +769,8 @@ header
 @media (min-width: 1200px) {
   .header-area .main-nav .nav {
     display: flex !important;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 8%;
+    margin-right: 8%;
   }
 }
 
@@ -720,8 +873,8 @@ header
 @media (min-width: 992px) {
   .header-area .main-nav .nav {
     display: flex !important;
-    margin-left: 8%;
-    margin-right: 5%;
+    margin-left: 6%;
+    margin-right: 4%;
   }
   .welcome-area .header-text .container > .header-banner-container {
     display: none;
@@ -730,7 +883,7 @@ header
 
 @media (min-width: 1200px) {
   .header-area .main-nav .nav {
-    margin-left: 14%;
+    margin-left: 11%;
     margin-right: 5%;
   }
 }
@@ -787,6 +940,10 @@ welcome
 
 .welcome-area .container {
   /*max-height: 795px;*/
+}
+
+.welcome-area .header-text .container > .row {
+  min-height: 795px;
 }
 
 .welcome-area .header-text .container > .header-banner-container {
@@ -1055,8 +1212,6 @@ promotion
 */
 
 .left-image-decor {
-  background-image: url(../images/left-bg-decor.png);
-  background-repeat: no-repeat;
   position: absolute;
   width: 100%;
   display: inline-block;
@@ -1106,9 +1261,6 @@ testimonials
 --------------------------------------------
 */
 .right-image-decor {
-  background-image: url(../images/right-bg-decor.png);
-  background-repeat: no-repeat;
-  background-position: right center;
   position: absolute;
   width: 100%;
   display: inline-block;
@@ -1276,6 +1428,41 @@ footer
 ---------------------------------------------
 */
 
+@media (min-width: 768px) {
+  .header-area .main-nav .logo, .logo {
+    margin: 0;
+  }
+  .welcome-area .header-text .container .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 576px) {
+  .header-area .main-nav .logo, .logo {
+    margin: 0;
+  }
+  .welcome-area .header-text .container .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 576px) {
+  .header-area .main-nav .logo, .logo {
+    margin: 0;
+  }
+  .header-area .main-nav .logo img, .logo img {
+    width: 140px;
+  }
+  .join .logo img {
+    margin: 0;
+    height: auto;
+    width: 200px;
+  }
+  .welcome-area .header-text .container .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 @media (max-width: 992px) {
   footer {
     padding-top: 20px;
@@ -1291,11 +1478,13 @@ footer
   }
   footer .container .row .col-lg-12 {
     display: contents !important;
+    justify-content: center;
   }
   footer .container .row .col-lg-12 > div {
     display: inline-grid;
     text-align: center;
     padding-bottom: 20px;
+    justify-content: center;
   }
 }
 
