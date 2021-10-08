@@ -1,7 +1,5 @@
 (function ($) {
-
 	"use strict";
-
 
 	$('.owl-carousel').owlCarousel({
 		loop: true,
@@ -50,6 +48,72 @@
 		});
 	}
 
+	// Join Now button click handler
+	// if ($('.join-now').length) {
+	// 	$(".join-now").on('click', function () {
+	// 		$(".join-now-modal-wrapper").toggleClass('show');
+	// 		$(".join-now-modal-wrapper-overlay").toggleClass('show');
+	// 		console.log('Join Now button clicked');
+	// 	});
+	// }
+
+	// Join Now overlay click handler
+	// if ($('.join-now-modal-wrapper-overlay').length) {
+	// 	$(".join-now-modal-wrapper-overlay").on('click', function () {
+	// 		$(this).toggleClass('show');
+	// 		$(".join-now-modal-wrapper").toggleClass('show');
+	// 		console.log('Join Now overlay clicked');
+	// 	});
+	// }
+
+	// Join Now overlay click handler
+	// if ($('.close-modal').length) {
+	// 	$(".close-modal").on('click', function () {
+	// 		$(".join-now-modal-wrapper").toggleClass('show');
+	// 		$(".join-now-modal-wrapper-overlay").toggleClass('show');
+	// 	});
+	// }
+
+	// $("#businessName").focus(function () {
+	// 	$("#labelBusinessName").toggleClass('active');
+	// 	console.log('businessName focus');
+	// }).blur(function () {
+	// 	$("#labelBusinessName").toggleClass('active');
+	// 	console.log('businessName blur');
+	// });
+
+	// function onSuccess(response) {
+	// 	console.log('onSuccess response', response);
+	// }
+	//
+	// function onError(error) {
+	// 	console.log('onError error', error);
+	// }
+
+	// Create Store button click handler
+	// $("#createStoreButton").on('click', function () {
+	// 	const businessName = document.getElementById('businessName').value;
+	// 	const businessAddress = document.getElementById('businessAddress').value;
+	// 	const email = document.getElementById('email').value;
+	// 	const phoneNumber = document.getElementById('phoneNumber').value;
+	// 	const data = {
+	// 		businessName: businessName,
+	// 		businessAddress: businessAddress,
+	// 		email: email,
+	// 		phoneNumber: phoneNumber,
+	// 	};
+	// 	// console.log('data', data);
+	//
+	// 	$.ajax({
+	// 		type: "POST",
+	// 		url: "http://lulo-server-dev.herokuapp.com/api/v1/register",
+	// 		data: JSON.stringify({ email: email, password: email }),
+	// 		success: onSuccess,
+	// 		error: onError,
+	// 		contentType: "application/json; charset=utf-8",
+	// 		dataType: "json",
+	// 	});
+	// });
 
 	// Menu elevator animation
 	$('a[href*=\\#]:not([href=\\#])').on('click', function () {
@@ -78,14 +142,17 @@
 
 		//smoothscroll
 		$('.menu-item').on('click', function (e) {
-			e.preventDefault();
+			const shouldPreventDefault = e && e.target && e.target.href.indexOf('#') !== -1;
+			if (shouldPreventDefault) {
+				e.preventDefault();
+			}
 			var athis = this;
 			var target = this.hash,
 				menu = target;
 			var $target = $(target);
 
 			$('html, body').stop().animate({
-				'scrollTop': $target.offset().top
+				'scrollTop': $target && $target.offset() ? $target.offset().top : 0
 			}, 500, 'swing', function () {
 				window.location.hash = target;
 				$('.menu-item').removeClass('active');
@@ -100,7 +167,7 @@
 				$('a[href^="#welcome"]').addClass('active');
 				return;
 			}
-			$('.menu-item').not('[href=""]').not('[href="javascript:;"]').each(function () {
+			$('.menu-item').not('[href=""]').not('[href="mailto:hello@oklulo.com"]').not('[href="https://dashboard.oklulo.com/"]').not('[href="javascript:;"]').each(function () {
 				var currLink = $(this);
 				var refElement = $(currLink.attr("href"));
 
@@ -234,12 +301,12 @@
 	// Window Resize Mobile Menu Fix
 	function mobileNav() {
 		var width = $(window).width();
-		$('.submenu').on('click', function () {
-			if (width < 992) {
-				$('.submenu ul').removeClass('active');
-				$(this).find('ul').toggleClass('active');
-			}
-		});
+		// $('.submenu').on('click', function () {
+		// 	if (width < 992) {
+		// 		$('.submenu ul').removeClass('active');
+		// 		$(this).find('ul').toggleClass('active');
+		// 	}
+		// });
 	}
 
 
